@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flav — Photography</title>
+  <meta name="description" content="Portfolio fotografico di Flav: selezioni, progetti e contatti.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">FLAV</a>
+      <nav class="nav">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contatti</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1>Fotografia, luce, gesti.</h1>
+      <p class="subtitle">Una selezione essenziale dei lavori di Flavia.</p>
+    </section>
+
+    <section id="portfolio" class="container">
+      <h2>Portfolio Highlights</h2>
+      <div id="gallery" class="gallery" aria-live="polite"></div>
+      <p class="more-note">Vuoi vedere altro? Segui <a href="https://www.instagram.com/flllauta/" target="_blank" rel="noopener">Instagram</a>.</p>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About</h2>
+      <p>C'è una popolazione intera in questo portfolio</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contatti</h2>
+      <ul>
+        <li>Email: flaviadellerba98@gmail.com <a href="mailto:ciao@example.com">ciao@example.com</a></li>
+        <li>Instagram: flllauta<a href="https://instagram.com/" target="_blank" rel="noopener">@flav</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Flavia Dell'Erba. Tutti i diritti riservati.</small>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Anteprima immagine">
+    <button class="lb-close" aria-label="Chiudi (Esc)">&times;</button>
+    <button class="lb-prev" aria-label="Precedente (←)">&#10094;</button>
+    <figure class="lb-stage">
+      <img id="lb-img" alt="Anteprima">
+      <figcaption id="lb-cap"></figcaption>
+    </figure>
+    <button class="lb-next" aria-label="Successiva (→)">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
