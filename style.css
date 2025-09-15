@@ -1,16 +1,20 @@
-/* === Stili base portfolio Flav (v2) === */
+/* === Stili base portfolio Flav (v3) === */
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 body {
-  font-family: Arial, Helvetica, sans-serif;  /* più spigoloso */
+  font-family: Arial, Helvetica, sans-serif;  /* font spigoloso */
   line-height: 1.5;
   color: #111;
   background: #fff;
-  text-align: center; /* testi al centro */
+  text-align: center; /* testi centrati */
 }
 
 /* Contenitore */
-.container { width: 92%; max-width: 1080px; margin: 0 auto; }
+.container {
+  width: 92%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
 
 /* Header */
 .site-header {
@@ -21,7 +25,7 @@ body {
 }
 .header-inner {
   display: flex;
-  justify-content: center; /* nav centrato */
+  justify-content: center;
   gap: 2rem;
   padding: .75rem 0;
 }
@@ -40,21 +44,33 @@ body {
 .nav a:hover { opacity: 1; }
 
 /* Hero */
-.hero { padding: 3rem 0 1rem; }
+.hero {
+  padding: 3rem 0 1rem;
+}
 .hero h1 {
   margin: 0 0 .25rem;
   font-size: clamp(1.8rem, 3vw, 2.4rem);
 }
-.subtitle { color: #666; margin: 0; }
+.subtitle {
+  color: #666;
+  margin: 0;
+}
 
 /* Sezioni */
 h2 {
   margin-top: 2.5rem;
   font-size: clamp(1.3rem, 2vw, 1.8rem);
 }
-.about, .contact { padding-bottom: 1.5rem; }
-.contact ul { list-style: none; padding: 0; }
-.contact li { margin: .25rem 0; }
+.about, .contact {
+  padding-bottom: 1.5rem;
+}
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+.contact li {
+  margin: .25rem 0;
+}
 
 /* Galleria */
 .gallery {
@@ -63,12 +79,17 @@ h2 {
   gap: 18px;
   margin-top: 1rem;
 }
-@media (max-width: 900px) {
+
+/* tablet */
+@media (max-width: 1024px) {
   .gallery { grid-template-columns: repeat(2, 1fr); }
 }
-@media (max-width: 600px) {
+
+/* mobile */
+@media (max-width: 768px) {
   .gallery { grid-template-columns: 1fr; }
 }
+
 .card {
   position: relative;
   overflow: hidden;
